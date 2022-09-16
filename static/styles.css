@@ -1,0 +1,87 @@
+::-webkit-scrollbar{
+	display: none;
+}
+
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: 'Nanum Myeongjo', serif;
+	padding: 0px;
+	background: linear-gradient(to right, rgb(225, 0, 255,0.5), rgb(255, 77, 0,0.5));
+	background-image: url(coder.jpg);
+	background-size: cover;
+	font-size: 18px;
+	line-height: 1;
+	text-align:left;
+	color: #fdf9f9;
+}
+
+.container{
+	text-align:left;
+    margin: 0;
+    font-variant: small-caps;
+}
+
+.heading_first{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-size: 4.5em;
+	font-weight: 150;
+}
+
+.description{
+    font-size: 20px;
+	font-weight: 100;
+	margin: 10px;
+}
+
+.main-header{
+	display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+	text-align:center;
+	height:auto;
+	width:100%;
+	margin:2px;
+	padding:10px;
+}
+
+.block{
+	border-radius: 15px 15px 15px 15px;
+	background: linear-gradient(to right, rgba(16, 3, 38, 0.5), rgba(9, 192, 42, 0.5));
+	color: #fdf9f9;
+	padding: 10px;
+	margin: 5px;
+	width: auto;
+    height: auto;
+
+}
+
+.btn-info {
+	border-radius: 5px 5px 5px 5px;
+	background-color:#35e17d ;
+	height:40px;
+	width:100px;
+	}
+
+.btn-info:hover {
+	background: #05480d;
+}
+
+
+.results{
+	text-align:left;
+	padding: 20px; 
+    width: 230px;
+    height: 150px;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px;
+	border-radius: 15px 15px 15px 15px;
+    background: linear-gradient(to right, rgba(16, 3, 38, 0.5), rgba(9, 192, 42, 0.5));
+}
