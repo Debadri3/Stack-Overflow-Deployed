@@ -1,8 +1,14 @@
-Heroku deployment URL: https://personalized-cancer-api.herokuapp.com
+Heroku deployment URL: https://stack-overflow-tagger.herokuapp.com/ (In case the application does not run, please refer to the uploaded images to get an idea of the deployed webpage)
 
-AWS Elastic Beanstalk deployment URL (inactive): http://personalizedcancerdiagnosis-env.eba-mqtnsamu.us-east-2.elasticbeanstalk.com/
+Blog post for the project: https://medium.com/analytics-vidhya/stack-overflow-question-tagger-96a045c1ca4c
 
-Blog post for the project: https://medium.com/analytics-vidhya/redefining-cancer-treatment-the-memorial-sloan-way-b71ef4eed284
+![image](https://user-images.githubusercontent.com/62327777/197771310-9f75cb50-1e91-4a8d-9d93-929b953b712f.png)
+
+![image](https://user-images.githubusercontent.com/62327777/197771507-738909c6-f5a1-4367-9409-efce17ac31b5.png)
+
+
+
+
 
 # Steps to run the project on your local host-
 1. Clone the repository and open the command prompt in the clone directory.
