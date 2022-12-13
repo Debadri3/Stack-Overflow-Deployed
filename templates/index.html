@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stack Overflow Question Tagger</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='netflix.ico') }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span class='heading_first'>Question Tagger for </span><span
+                class="heading_second">Stack Overflow</span></h2>
+        <div class='description'>
+            <p>A Machine Learning Web App, Built with Flask, Deployed on the Cloud</p>
+        </div>
+        <p>Please fill all fields with required text</p>
+    </div>
+
+    <!-- Prediction Area -->
+    <div>
+        <div class="prediction-area">
+            <!-- TV series Banner - 1 -->
+            <div class='ipl-banner-left'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}"
+                                >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}"
+                                >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}"
+                                >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}"
+                            >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}"
+                                >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}"
+                                >
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}"
+                                >
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}"
+                                >
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Prediction Form -->
+
+            <div class='div2'>
+                <form action="predict" method="POST">
+                    <div class="block">
+                        <p class="description">Enter Question Title Here</p>
+                        <textarea class="form-input" name="title" type="text" rows="2" cols="50" placeholder="Eg. Implementing Boundary Value Analysis of Software Testing in a C++ program?"
+                            required="required"></textarea>
+                    </div>
+                    <div class="block">
+                        <p class="description">Enter Question Body Here</p>
+                        <textarea class="form-input" name="question" type="text" rows="2" cols="50"
+                            placeholder="Please describe elaborately what you'd like to ask" required="required"></textarea>
+                    </div>
+
+                    
+                    <button type="submit" class="btn btn-outline-success">Predict</button>
+                </form>
+
+
+
+
+                <br>
+                <p>The predicted question tag(s) is/are: </p>
+                <p>{{ prediction}} </p>
+                <br>
+                
+                <div class='description'>
+                    <p>Made with ❤️ by Debadri Sengupta</p>
+                    <a target="_blank" href="https://github.com/Debadri3/Personalized-Cancer-Diagnosis"><i
+                            class="fab fa-github fa-lg contact-icon" aria-hidden="true"></i></a>
+
+                    <a target="_blank" href="https://www.linkedin.com/in/debadri-sengupta-61665a14b/"><i
+                            class="fab fa-linkedin fa-lg contact-icon" aria-hidden="true"></i></a>
+                </div>
+
+                <br>
+                <br>
+
+            </div>
+
+            <!-- TV series Banner - 2 -->
+            <div class='ipl-banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}"
+                                >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}"
+                                >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}"
+                                >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}"
+                            >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}"
+                                >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}"
+                                >
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}"
+                                >
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}"
+                                >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
